@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* =========Universal code ============*/
+*{
+font-family: 'Barlow', sans-serif;
+}
+body{
+    background-color: #252836;
+}
+/* =========Header code ============*/
+ul.navbar-nav>li {
+    margin-right: 8px;
+    background: #EA7C69;
+}
+
+li.nav-item.dropdown.rounded.sort_buttton {
+    background: #1F1D2B;
+}
+ul.nav.sub_nav>li>a {
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+}
+input,select:focus {
+    box-shadow: none !important;
+}
+ul.nav.sub_nav>li>a:hover{
+    color: #EA7C69;
+}
+ul.nav.sub_nav>li {
+    position: relative;
+}
+ul.nav.sub_nav>li::before {
+    content: "";
+    background: #EA7C69;
+    position: absolute;
+    width: 80%;
+    overflow: hidden;
+    height: 2px;
+    left: 10%;
+    bottom: 9%;
+    transform: scaleX(0);
+    transition: 0.5s;
+    transform-origin: left;
+}
+ul.nav.sub_nav>li:hover:before{
+    transform: scaleX(1);
+}
+li.nav-item.active:before {
+    transform: scaleX(1) !important;
+    color: #EA7C69;
+}
+
+/*=========== Main section is here ===========*/
+.worp_box{
+    background: #1F1D2B;
+    
+}
+span.top_textL {
+    background: #EA7C69;
+    padding: 0px 12px;
+}
+span.textRignt {
+    background: #30313C;
+    padding: 0px 12px;
+}
+.RtP_right select{
+    background: #1F1D2B;
+    border: 1px solid #1F1D2B;
+}
+.plume_editor{
+    background: #1F1D2B;
+}
+.single_button{
+    background: #EA7C69;
+    
+}
+button.rounded.single_button {
+    font-weight: 700;
+    border: none;
+}
+/*=============== Post page css is here ===============*/
+.button_group>button{
+    color: #EA7C69;
+    border: 1px solid #EA7C69;
+}
+.ads{
+    background: #6BE2BE;
+    border: 1px solid #6BE2BE !important;
+}
+img.word_flag {
+    width: 20px;
+}
+.post_page_amount{
+    background: #6BE2BE !important;
+}
+.single_image {
+    position: relative;
+}
+
+.single_image>img {
+    position: absolute;
+    top: -34%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 54%;
+}
+.buttonGroup>button {
+    border: 1px solid #EA7C69;
+    color: #EA7C69;
+    transition: 0.5s;
+}
+
+.buttonGroup>button:hover {
+    background: #EA7C69;
+    color: white;
+}
+button.active{
+    background: #EA7C69;
+    color: white;
+}
+button:focus{
+    box-shadow: none !important;
+}
+.form input,.form textarea {
+    background: #393C49;
+    border: none;
+}
+select.form-select.lenguage_form {
+    color: #E0E6E9;
+    background-color: #1f1d2b;
+    border: 1px solid #393C49;
+}
+button.btn.w-100.first_btn {
+    background: #252836;
+    color: #ABBBC2;
+}
+button.btn.w-100.add_button {
+    background: #EA7C69;
+    color: white;
+    box-shadow: 0px 8px 24px 0px #EA7C694D;
+}
+#customRange1::-webkit-slider-thumb{
+    background: #EA3869;
+    border: 2px solid white;
+
+}
+/* =========Popup section is here =========*/
+section.popUp_section {
+    background: #ffffffe0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: 0.5s;
+}
+.open_popUp{
+    transform: scale(1) !important;
+    visibility: visible !important;
+}
+.publish_btn {
+    border: 1px solid #ABBBC2;
+}
+input.btn.date_button {
+    border: 1px solid #393C49;
+    color: #EA7C69;
+}
+button.btn.w-100.add_button.calcel_button {
+    background: #ea7c6900;
+    box-shadow: none;
+    border: 1px solid #393C49;
+}
+.col-md-8.popup_box {
+    background: #1F1D2B;
+}
+form.main_search {
+    position: relative;
+}
+a.mini_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+input.form-control {
+    padding-left: 2rem;
+}

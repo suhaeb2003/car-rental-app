@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+    
+}
+:root{
+    --my-color:red;
+    --title-size:20px;
+}
+
+header{
+    background:url(../Image/header-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+.header_div>p {
+    letter-spacing: 8px;
+}
+div#navbarSupportedContent>ul>li>a {
+    color: var(--my-color);
+    font-weight: 700;
+    transition: 0.5s;
+    margin-right: 5px;
+    padding: 1px 17px;
+}
+
+div#navbarSupportedContent>ul>li>a:hover {
+    background: #FFC61A;
+    border-radius: 25px 28px;
+ 
+}
+a.nav-link.active {
+    background: #FFC61A;
+    color: black !important;
+    border-radius: 25px 28px;
+}
+.logo >p {
+    font-size: var(--title-size);
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-top: 7px;
+    color: white;
+    margin-left: 8px
+}
+.col-lg-3.py-2.ps-4.logo img {
+    width: 31%;
+}
+#second_hader {
+    background: #FFC61A;
+    padding-top: 10rem !important;
+}
+.form.bg-white.m-auto {
+    width: 70%;
+    overflow: hidden;
+}
+input[type="text"] {
+    outline: none;
+    border: none;
+}
+
+hr {
+    margin: 0px 0px 12px 0px !important;
+}
+
+form {
+    padding: 0px 25px 025px 025px;
+}
+input.bg-dark.text-white.submi {
+    border-radius: 15px 15px;
+    margin-top: 13px;
+}
+.col-md-6.car img {
+    width: 37%;
+    position: absolute;
+    bottom: -22%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+header {
+    position: relative;
+    padding-bottom: 12rem;
+}
+
+
+
+
+
+
