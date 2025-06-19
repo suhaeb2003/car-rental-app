@@ -17,20 +17,27 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a  class="nav-link" href="{{route('allcars')}}">All Car</a>
+                        <a  class="nav-link" href="{{route('allcars')}}">Cars</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Order Now</a>
+                        <a class="nav-link" href="#">About</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                       </li>
+                      @guest
+                        <li class="nav-item" >
+                        <a class="nav-link" href="{{route('login')}}">Login</a>
+                      </li>
+                      @endguest
+                      @auth
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Deshbord</a>
+                      </li>
+                      <li class="nav-item" >
+                        <a class="nav-link" href="{{route('logout')}}">Logout</a>
+                      </li>
+                      @endauth
                     </ul>
                   </div>
                 </div>
